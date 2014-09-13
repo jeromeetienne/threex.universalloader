@@ -34,8 +34,33 @@ bower install threex.universalloader
 How To Use It
 =============
 
-there is no real use as it is only a boilerplate for your own extension.
+Here is a basic usage. First you create the loader itself
 
 ```javascript
-var instance	= new THREEx.Sample()
+    var loader  = new THREEx.UniversalLoader()
+```
+
+Then you trigger the loading of your model. Say you want to load a 
+model at ```models/monster.dae```
+
+```javascript
+    var url = 'models/monster.dae'
+    loader.load(url, function(object3d){
+        // this function will be notified when the model is loaded
+        scene.add(object3d)
+    })
+```
+
+There is a special case for the OBJ/MTL models as they need 2 urls, one for
+the 
+[OBJ](http://en.wikipedia.org/wiki/Wavefront_.obj_file), one for the 
+[MTL](http://en.wikipedia.org/wiki/Wavefront_.obj_file#Material_template_library). In this case, just provides both
+urls in a array like this.
+
+```javascript
+    var urls = ['models/monster.obj', 'models/monster.mtl']
+    loader.load(url, function(object3d){
+        // this function will be notified when the model is loaded
+        scene.add(object3d)
+    })
 ```
