@@ -37,18 +37,18 @@ How To Use It
 Here is a basic usage. First you create the loader itself
 
 ```javascript
-    var loader  = new THREEx.UniversalLoader()
+var loader  = new THREEx.UniversalLoader()
 ```
 
 Then you trigger the loading of your model. Say you want to load a 
 model at ```models/monster.dae```
 
 ```javascript
-    var url = 'models/monster.dae'
-    loader.load(url, function(object3d){
-        // this function will be notified when the model is loaded
-        scene.add(object3d)
-    })
+var url = 'models/monster.dae'
+loader.load(url, function(object3d){
+    // this function will be notified when the model is loaded
+    scene.add(object3d)
+})
 ```
 
 There is a special case for the OBJ/MTL models as they need 2 urls, one for
@@ -58,9 +58,9 @@ the
 urls in a array like this.
 
 ```javascript
-    var urls = ['models/monster.obj', 'models/monster.mtl']
-    loader.load(url, function(object3d){
-        // this function will be notified when the model is loaded
-        scene.add(object3d)
-    })
+var urls = ['models/monster.obj', 'models/monster.mtl']
+loader.load(url, function(object3d){
+    // this function will be notified when the model is loaded
+    scene.add(object3d)
+})
 ```
