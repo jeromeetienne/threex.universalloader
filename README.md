@@ -13,7 +13,7 @@ Show Don't Tell
 It shows a basic usage of threex.universalloader.
 
 A Screenshot
-============
+============ 
 [![screenshot](https://raw.githubusercontent.com/jeromeetienne/threex.universalloader/master/examples/images/screenshot-threex-universalloader-512x512.jpg)](http://jeromeetienne.github.io/threex.universalloader/examples/basic.html)
 
 How To Install It
