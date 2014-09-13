@@ -4,7 +4,7 @@ threex.universalloader
 threex.universalloader is a 
 [threex game extension for three.js](http://www.threejsgames.com/extensions/).
 It provides an universal loader for models in three.js. You give it the url
-of your models and it will load it with the loader made for this model file format.
+of your models and it will load it with the three.js loader suitable for its format.
 
 Show Don't Tell
 ===============
