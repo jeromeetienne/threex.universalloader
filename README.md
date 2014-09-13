@@ -3,17 +3,14 @@ threex.universalloader
 
 threex.universalloader is a 
 [threex game extension for three.js](http://www.threejsgames.com/extensions/).
-It provides an universalloader for other developpers.
-Thus they can copy it and start their own extension.
+It provides an universal loader for models in three.js. You give it the url
+of your models and it will load it with the loader made for this model file format.
 
 Show Don't Tell
 ===============
 * [examples/basic.html](http://jeromeetienne.github.io/threex.universalloader/examples/basic.html)
 \[[view source](https://github.com/jeromeetienne/threex.universalloader/blob/master/examples/basic.html)\] :
-It shows this feature, and that one which is coded like that.
-* [examples/requirejs.html](http://jeromeetienne.github.io/threex.universalloader/examples/requirejs.html)
-\[[view source](https://github.com/jeromeetienne/threex.universalloader/blob/master/examples/requirejs.html)\] :
-It does that this way, and it is cool in that case.
+It shows a basic usage of threex.universalloader.
 
 A Screenshot
 ============

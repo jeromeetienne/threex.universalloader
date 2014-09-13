@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<script src='../../../vendor/three-r67.js/build/three.js'></script>
-<script src='../../../vendor/three-r67.js/examples/js/loaders/STLLoader.js'></script>
-<script src='../../../vendor/three-r67.js/examples/js/loaders/ColladaLoader.js'></script>
-<script src='../../../vendor/three-r67.js/examples/js/loaders/OBJLoader.js'></script>
-<script src='../../../vendor/three-r67.js/examples/js/loaders/MTLLoader.js'></script>
-<script src='../../../vendor/three-r67.js/examples/js/loaders/OBJMTLLoader.js'></script>
-<script src='../../../vendor/three-r67.js/examples/js/loaders/BinaryLoader.js'></script>
+<script src='vendor/three-r67.js/build/three.js'></script>
+<script src='vendor/three-r67.js/examples/js/loaders/STLLoader.js'></script>
+<script src='vendor/three-r67.js/examples/js/loaders/ColladaLoader.js'></script>
+<script src='vendor/three-r67.js/examples/js/loaders/OBJLoader.js'></script>
+<script src='vendor/three-r67.js/examples/js/loaders/MTLLoader.js'></script>
+<script src='vendor/three-r67.js/examples/js/loaders/OBJMTLLoader.js'></script>
+<script src='vendor/three-r67.js/examples/js/loaders/BinaryLoader.js'></script>
 <script src='../threex.universalloader.js'></script>
 <body style='margin: 0px; background-color: #bbbbbb; overflow: hidden;'><script>
 	var renderer	= new THREE.WebGLRenderer({
@@ -17,7 +17,7 @@
 	var onRenderFcts= [];
 	var scene	= new THREE.Scene();
 	var camera	= new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.01, 1000);
-	camera.position.z = 2;
+	camera.position.z = 1;
 
 	//////////////////////////////////////////////////////////////////////////////////
 	//		set 3 point lighting						//
@@ -45,7 +45,7 @@
 
 	var urls	= []
 	var urls	= 'models/stl/ascii/pr2_head_pan.stl'
-	// var urls	= 'models/collada/monster/monster.dae'
+	var urls	= 'models/collada/monster/monster.dae'
 	// var urls	= 'models/Suzanne.js'
 	// var urls	= 'obj/tree/tree.js'
 	// var urls	= 'obj/tree/tree.obj'
@@ -53,9 +53,6 @@
 	// var urls	= ['obj/female02/female02.mtl', 'obj/female02/female02.obj']
 	// var urls	= ['obj/female02/female02.obj', 'obj/female02/female02.mtl']
 	// var urls	= 'obj/female02/Female02_slim.js'
-
-// loadedModelId = basename of main url
-// notify conflict in console.log
 
 	var loader	= new THREEx.UniversalLoader()
 	loader.load(urls, function(object3d){
