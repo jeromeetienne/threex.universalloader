@@ -59,7 +59,7 @@ urls in a array like this.
 
 ```javascript
 var urls = ['models/monster.obj', 'models/monster.mtl']
-loader.load(url, function(object3d){
+loader.load(urls, function(object3d){
     // this function will be notified when the model is loaded
     scene.add(object3d)
 })
